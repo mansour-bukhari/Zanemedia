@@ -1,0 +1,13 @@
+{
+  "mcpServers": {
+    "zenoti": {
+      "command": "npx",
+      "args": ["-y", "zenoti-mcp-server"],
+      "env": {
+        "ZENOTI_API_KEY": "${ZENOTI_API_KEY}",
+        "ZENOTI_API_URL": "${ZENOTI_API_URL:-https://api.zenoti.com}",
+        "ZENOTI_CENTER_ID": "${ZENOTI_CENTER_ID:-}"
+      }
+    }
+  }
+}
